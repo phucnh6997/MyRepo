@@ -26,7 +26,7 @@ class AccountManagement(db.Model):
 
 
 # Route để lấy dữ liệu từ bảng account_management theo ID
-@app.route('/account/<int:id>', methods=['GET'])
+@app.route('/account/<string:id>', methods=['GET'])
 def get_account_by_id(id):
     try:
         # Thực hiện truy vấn để lấy dữ liệu theo ID
@@ -52,7 +52,7 @@ def get_account_by_id(id):
 
 
 # Route để cập nhật status cho tài khoản theo ID
-@app.route('/account/<int:id>/status', methods=['PUT'])
+@app.route('/account/<string:id>/status', methods=['PUT'])
 def update_account_status(id):
     try:
         # Truy vấn để lấy tài khoản từ bảng account_management theo ID
