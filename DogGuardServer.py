@@ -6,7 +6,7 @@ import pytz
 app = Flask(__name__)
 
 # Cấu hình chuỗi kết nối đến cơ sở dữ liệu MySQL
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:P@ssw0rdDG123@localhost/dogguard'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:P@ssw0rdDG123@118.70.127.173:8000/dogguard'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Khởi tạo đối tượng SQLAlchemy
